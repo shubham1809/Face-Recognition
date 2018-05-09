@@ -3,8 +3,6 @@ import boto3
 BUCKET = "ishubham-rekognition"
 KEY_SOURCE = "image/1.jpg"
 KEY_TARGET = "image/4.jpg"
-ACCESS_KEY='AKIAIBJ3HF7QA3NO32EA'
-SECRET_KEY='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'
 
 def compare_faces(bucket, key, bucket_target, key_target, threshold=80, region="us-west-2"):
 	rekognition = boto3.client("rekognition", region,aws_access_key_id=ACCESS_KEY,
