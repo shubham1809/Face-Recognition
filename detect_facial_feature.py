@@ -4,8 +4,7 @@ import json
 
 imageFile = "images/kamal.jpg"
 carimage="images/car.jpg"
-ACCESS_KEY='AKIAIBJ3HF7QA3NO32EA'
-SECRET_KEY='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'
+
 region="us-west-2"
 client=client= boto3.client("rekognition", region,aws_access_key_id=ACCESS_KEY,
     aws_secret_access_key=SECRET_KEY)
